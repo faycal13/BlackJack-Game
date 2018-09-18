@@ -1,0 +1,170 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: azure;
+}
+
+.invisible {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.square {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.red {
+    background-color: #ec2828;
+}
+
+.lightBlue {
+    background-color: rgb(51, 116, 255);
+}
+
+.badSquares {
+}
+
+.parametres-title {
+    display: inline-block;
+    width: unset;
+    height: unset;
+}
+
+.progressBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 80%;*/
+    height: 100%;
+    background-color: #d44747;
+    z-index: 0;
+}
+
+.winner {
+    color: #28ec49;
+    border: 2px solid #28ec49;
+}
+
+.looser {
+    color: #ec2828;
+    border: 2px solid #ec2828;
+}
+
+#squareNR {
+    width: 20%;
+    margin-right: 2.5%;
+    border: 1px dashed rgb(88, 88, 88);
+    border-radius: 10%;
+}
+
+#time{
+    width: 20%;
+    border: 1px dashed rgb(88, 88, 88);
+    border-radius: 10%;
+}
+
+#timeSec {
+    margin-right: 2.5%;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+#containerHolder {
+    position: relative;
+}
+
+#container {
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2c2c;
+}
+
+#parametres {
+    display: inline-block;
+    flex: 2;
+}
+
+#bttnHolder {
+    flex: 2;
+    padding-left: 1%;
+}
+
+#startBttn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 2%;
+    font-size: 1.2vmax;
+    color: #f4e8ff;
+    background-color: #1a205c;
+    border: 0;
+    border-radius: 5%;
+}
+
+#startBttn:active {
+    background-color: #4a47d4;
+    box-shadow: #4e4e4e 1px 1px 5px 0px;
+}
+
+#stopBttn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 2%;
+    font-size: 1.2vmax;
+    color: #f4e8ff;
+    background-color: #5c1a1a;
+    border: 0;
+    border-radius: 5%;
+}
+
+#stopBttn:active {
+    background-color: #d44747;
+    box-shadow: #4e4e4e 1px 1px 5px 0px;
+}
+
+#points {
+    z-index: 10;
+    position: relative;
+    border: 1px dotted #4e4e4e;
+    color: #202020;
+    text-align: center;
+}
+
+#resultat {
+    position: relative;
+}
+
+#message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 5%;
+}

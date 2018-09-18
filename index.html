@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Game JS</title>
+</head>
+<body class="container-fluid">
+    <header class="row pb-1">
+        <form id="parametresContainer" class="col-6 p-1 flex">
+            <fieldset id="parametres">
+                <legend class="parametres-title">Entrée vos parametre de jeu</legend>
+                <span class="">
+                    <div>
+                        <label for="nrCarré">Combien de carré ?</label>
+                        <input type="number" name="nrCarré" id="squareNR" min="3" max="15"placeholder="Ex: 3" required>
+                    </div>
+                    <div>
+                        <label for="temps">Combien de temps ?</label>
+                        <input type="number" name="temps" id="time" min="1" max="20" placeholder="Ex: 1" required>
+                        <span id="timeSec">seconds</span>
+                    </div>
+                </span>
+            </fieldset>
+            <div id="bttnHolder">
+                <input type="button" value="Commencer" id="startBttn">
+                <input type="button" value="Arréter" id="stopBttn">
+            </div>
+        </form>
+        <div class="col-3" id="timer"></div>
+        <div class="col-3" id="results">
+            <fieldset>
+                <legend>Vos résultats</legend>
+                <div id="resultat">
+                    <div id="points"></div>
+                    <div class="progressBar" id="progressBar"></div>
+                </div>
+            </fieldset>
+        </div>
+    </header>
+    <div id="containerHolder" class="container">
+        <div class="row" id="container"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
